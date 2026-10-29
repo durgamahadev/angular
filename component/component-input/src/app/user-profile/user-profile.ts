@@ -9,6 +9,7 @@ import { Component, input } from '@angular/core';
 export class UserProfile {
   name = input.required<string>();
   userProfession = input('', {
-    transform: (value: string) => value.toUpperCase(),alias:"profession"
+    transform: (value: string) => value.toUpperCase(),
+    alias:"profession"
   });
 }
